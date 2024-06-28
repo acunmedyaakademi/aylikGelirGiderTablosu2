@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aylık Gelir Gider Tablosu</title>
+  <link rel="stylesheet" href="assets/css/gelirGider.css">
+  <script src="assets/js/gelirGider.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="moneyHeader">
+      <h1>Gelir Gider Tablosu</h1>
+      <button id="addMoneyBtn">Ekle</button>
+    </header>
+    <button id="clearStorage">Storage i Temizle</button>
+    <div class="moneys" id="moneyContainer">
+      <div class="gelir">
+
+        <h1>GELİR</h1>
+        <table class="income">
+        
+        </table>
+        <div class="totalIncome"></div>
+
+      </div>
+      <div class="gider">
+        <h1>GİDER</h1>
+        <table class="expense">
+        </table>
+        <div class="totalExpense"></div>
+        <div class="difference"></div>
+      </div>
+    </div>
+  </div>
+<th rowspan="2"></th>
+
+  <dialog id="modal">
+    <form class="moneyForm" method="dialog" id="addMoneyForm">
+      <select name="selectValue">
+        <option value=""  selected disabled>Lütfen İşlem Seçiniz</option>
+        <option value="gelir" >Gelir</option>
+        <option value="gider" >Gider</option>
+      </select>
+      <label for="money">Tutar Giriniz</label>
+      <input type="number" name="money">
+      <label for="name">Ad</label>
+      <input type="text" name="name">
+      <p><button class="modelAddNew">Ekle</button> <button class="modelEdit">Kaydet</button> <button type="button"
+          onclick="addMoneyForm.reset();modal.close();">Vazgeç</button></p>
+      <input type="hidden" name="id" value="">
+    </form>
+  </dialog>
+</body>
+
+</html>
