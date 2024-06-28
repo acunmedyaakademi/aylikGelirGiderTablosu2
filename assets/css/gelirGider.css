@@ -130,6 +130,11 @@ a svg {
   font-weight: bold;
 }
 
+dialog{
+  padding: 10px;
+  margin: auto;
+}
+
 .modelEdit {
   display: none;
 }
