@@ -78,7 +78,18 @@ button {
 
 #clearStorage:hover {
   background-color: rgb(59, 54, 54);
+}
 
+#addData {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding-inline: 12px;
+}
+
+#addData:active{
+  background-color: rgb(59, 54, 54);
 }
 
 .moneyForm {
